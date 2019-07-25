@@ -191,3 +191,71 @@ footer {
 	text-align: center;
 }
 
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header nav  {
+        justify-content: space-evenly;
+        flex-flow: row wrap-reverse;
+        margin-bottom: 55px;
+    }
+
+    header .logo {
+        align-items: flex-start;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        justify-content: center;
+        margin: 15px 0px;
+    }
+
+    .button {
+        justify-content: center;
+        margin: 0 0;
+    }
+
+    .circlecode {
+        display: none;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .top2 {
+        justify-content: space-evenly;
+    }
+
+    .features {
+        width: 45%;
+    }
+
+    .about {
+        width: 45%;
+    }
+
+    .bottom3 {
+        justify-content: space-evenly;
+    }
+
+    .product {
+        width: 29%;
+    }
+
+    .vision {
+        width: 29%;
+    }
+
+    .services {
+        width: 29%;
+    }
+
+    .contact {
+        margin-left: 25px;
+    }
+}
