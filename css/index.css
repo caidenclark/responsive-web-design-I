@@ -72,6 +72,11 @@ h1, h2, h3, h4, h5 {
 	margin: auto;
 }
 
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 header nav {
 	display: flex;
 	margin-bottom: 35px;
@@ -196,10 +201,14 @@ footer {
         width: 100%;
         margin: auto;
     }
+    header {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: space-evenly;
+    }
 
     header nav  {
         justify-content: space-evenly;
-        flex-flow: row wrap-reverse;
         margin-bottom: 55px;
     }
 
@@ -258,4 +267,80 @@ footer {
     .contact {
         margin-left: 25px;
     }
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        margin: 0;
+        display: flex;
+    }
+    header nav img {
+        flex-direction: column-reverse;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-top: 0px;
+    }
+
+    header nav a {
+        border-top: 1px solid gray;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .content {
+        padding-bottom: 0px;
+    }
+
+    .top2 {
+        flex-flow: column wrap;
+        margin-left: 5px;
+    }
+
+    .features {
+        width: 99%;
+        margin: 20px 0px;
+    }
+
+    .about {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .bottom3 {
+        flex-flow: column wrap;
+        margin-left: 5px;
+    }
+
+    .services {
+        width: 99%;
+        margin-top: 0px;
+    }
+
+    .product {
+        width: 99%;
+        margin: 20px 0px;
+    }
+
+    .vision {
+        width: 99%;
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        margin-left: 5px;
+    }
+    
 }
